@@ -66,17 +66,160 @@
 \textbf{Замечание}: через \(\odot\) будем обозначать \textit{произведение Адамара} для матриц
 
 \begin{exercise}
-Для следующим матриц вычислите \(A\odot B\) если операция определение
+Для следующим матриц вычислите \(A\odot B\), если операция определена
+\begin{enumerate}
+	\item \(A=\begin{pmatrix} 1 & 2 \\ 0 & -1 \end{pmatrix}\) 
+	\(B=\begin{pmatrix} -1 & 1 \\ 2 & -2 \end{pmatrix}\)
+	\item \(A=\begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \end{pmatrix}\) 
+	\(B=\begin{pmatrix} -1 & 0 & 1 \\ 1 & -1 & 0 \\ 0 & 1 & -1 \end{pmatrix}\)
+	\item \(A=\begin{pmatrix} 1 & 0 & -1 & 1\\ 1 & 2 & -1 & 0  \end{pmatrix}\) 
+	\(B=\begin{pmatrix} -1 & 1 & 1 & 2 \\ 0 & 1 & 2 & -2 \end{pmatrix}\)
+	\item \(A=\begin{pmatrix} 1 \\ -1 \\ 2 \\ 0 \\ -2  \end{pmatrix}\) 
+	\(B=\begin{pmatrix} 0 \\ 2 \\ -1 \\ 1 \\ 0  \end{pmatrix}\)
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+Для матрицы \(A=\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}\) вычислите
 \begin{align*}
-	&(1) & A&=\begin{pmatrix}
-		1 & 2 \\ 0 & -1
-	\end{pmatrix} & B&=\begin{pmatrix}
-		-1 & 1 \\ 2 & -2
-	\end{pmatrix} \\
-	&(2) & A&=\begin{pmatrix}
-		1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1 
-	\end{pmatrix} & B&=\begin{pmatrix}
-		-1 & 1 \\ 2 & -2
+	&A\odot A & &A^\top\odot A & &A\odot A\odot A & &A\odot A^\top\odot A & &A\odot A^\top\odot A^\top
+\end{align*}
+\end{exercise}
+
+\begin{exercise}
+Для матрицы \(A=\begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 1 & 0 \end{pmatrix}\) вычислите
+\begin{align*}
+	&A\odot A & &A^\top\odot A & &A\odot A\odot A & &A\odot A^\top\odot A & &A\odot A^\top\odot A^\top
+\end{align*}
+\end{exercise}
+
+\begin{exercise}
+Рассмотрим матрицы
+\begin{align*}
+	A&=\begin{pmatrix}
+		-1 & 2 & 0 \\ 0 & 2 & 3 \\ 1 & -1 & 0 \\ 2 & -2 & 0
+	\end{pmatrix} &
+	B&=\begin{pmatrix}
+		0 & -1 & 1 \\ 0 & 1 & 1 \\ 2 & 0 & -1 \\ 1 & 1 & 2
+	\end{pmatrix} &
+	C&=\begin{pmatrix}
+		2 & 0 & -1 \\ -1 & -2 & 2 \\ 1 & -1& 2 \\ 0 & 3 & -1
 	\end{pmatrix}
 \end{align*}
+Вычислите
+\begin{align*}
+	& A\odot B\odot C & &A\odot B-C & &2B\odot C-A& &2A\odot B-3B\odot C
+\end{align*}
+\end{exercise}
+
+\begin{exercise}
+Рассмотрим матрицы
+\begin{align*}
+	A&=\begin{pmatrix}
+		2 & 1 & 5 \\ 3 & 4 & 3 \\ 1 & 2 & 0 \\ 2 & 3 & 1 \\ 1 & 1 & 0
+	\end{pmatrix} &
+	B&=\begin{pmatrix}
+		2 & 1 & 0 \\ 2 & 5 & 2 \\ 4 & 3 & 2 \\ 3 & 4 & 1 \\ 1 & 3 & 2
+	\end{pmatrix} &
+		C&=\begin{pmatrix}
+		5 & 2 & 3 \\ 2 & 3 & 0 \\ 2 & 1 & 0 \\ 1 & 0 & 1 \\ 2 & 2 & 3
+	\end{pmatrix}
+\end{align*}
+Вычислите
+\begin{align*}
+	& A\odot B\odot C & &2A\odot B-C & &B\odot C+2A& &3A\odot B-2B\odot C
+\end{align*}
+\end{exercise}
+	
+\begin{exercise}
+Рассмотрим матрицы
+\begin{align*}
+	A&=\begin{pmatrix}
+		-1 & 2 & 2 & 1 & 0 \\ 1 & 0 & -2 & 1 & 0
+	\end{pmatrix} \\
+	B&=\begin{pmatrix}
+		0 & 0 & 1 & 3 & 2 \\ -1 & 0 & 2 & 1 & -3
+	\end{pmatrix} \\
+	C&=\begin{pmatrix}
+		1 & 2 & 0 & 1 & 0 \\ 0 & 1 & 1 & -1 & -2
+	\end{pmatrix}
+\end{align*}
+Вычислите
+\begin{align*}
+	& & A\odot B\odot C & &2A\odot C-B & &B\odot C-2B& &3A\odot C-2A\odot C
+\end{align*}
+\end{exercise}
+
+\begin{exercise}
+Для следующим матриц вычислите произведении \(AB\) и \(BA\), если операции определены
+\begin{enumerate}
+	\item \(A=\begin{pmatrix} 1 & 2 \\ 0 & -1 \end{pmatrix}\) 
+	\(B=\begin{pmatrix} -1 & 1 \\ 2 & -2 \end{pmatrix}\)
+	\item \(A=\begin{pmatrix} 1 & 2 \\ 0 & -1 \end{pmatrix}\) 
+	\(B=\begin{pmatrix} 1 & 1 & -1 \\ 0 & 2 & 1 \end{pmatrix}\)
+	\item \(A=\begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \end{pmatrix}\) 
+	\(B=\begin{pmatrix} -1 & 0 & 1 \\ 1 & -1 & 0 \\ 0 & 1 & -1 \end{pmatrix}\)
+	\item \(A=\begin{pmatrix} 1 & 0 & -1 & 1\\ 1 & 1 & -1 & 0  \end{pmatrix}\) 
+	\(B=\begin{pmatrix} -1 & 1 \\ 1 & -1 \\ 0 & 1 \\ 1 & -1 \end{pmatrix}\)
+	\item \(A=\begin{pmatrix} 1 & -1 & 1 \end{pmatrix}\) 
+	\(B=\begin{pmatrix} 0 \\ 1 \\ -1 \end{pmatrix}\)
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+Для следующим матриц вычислите произведении \(A^\top B, AB^\top, B^\top A\) и \(BA^\top\), если операции определены
+\begin{enumerate}
+	\item \(A=\begin{pmatrix} 1 & 2 \\ 0 & -1 \end{pmatrix}\) 
+	\(B=\begin{pmatrix} -1 & 1 \\ 2 & -2 \end{pmatrix}\)
+	\item \(A=\begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \end{pmatrix}\) 
+	\(B=\begin{pmatrix} -1 & 0 & 1 \\ 1 & -1 & 0 \\ 0 & 1 & -1 \end{pmatrix}\)
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+Рассмотрим матрицы
+\begin{align*}
+	A&=\begin{pmatrix}
+		1 & -1 \\ -1 & 1 
+	\end{pmatrix} &
+	B&=\begin{pmatrix}
+		-1 & 1 \\ 1 & -1 
+	\end{pmatrix} &
+		C&=\begin{pmatrix}
+		1 & 1 \\ -1 & 1
+	\end{pmatrix}
+\end{align*}
+Вычислите
+\begin{align*}
+	& AC-B & &BA+C & &(B+C)A & &C(A-B) & &AB-BC & &ABC
+\end{align*}
+\end{exercise}
+
+\begin{exercise}
+Рассмотрим матрицы
+\begin{align*}
+	A&=\begin{pmatrix}
+		2 & 1 & -1 \\ -1 & 1 & 2 \\ 1 & 1 & -1 
+	\end{pmatrix} &
+	B&=\begin{pmatrix}
+		-2 & 1 & 0 \\ 1 & -1 & 1 \\ 1 & -1 & 1 
+	\end{pmatrix} &
+		C&=\begin{pmatrix}
+		1 & 2 & -1 \\ 2 & -1 & 1 \\ 1 & 1 & 0 
+	\end{pmatrix}
+\end{align*}
+Вычислите
+\begin{align*}
+	& AB-C & &BC+A & &A(B+C) & &(2A-3B)C & &AB+BC & &ABC
+\end{align*}
+\end{exercise}
+
+\begin{exercise}
+Для матрицы \(A=\begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix}\) вычислите
+\(A^2, A^3, A^4\)
+\end{exercise}
+	
+\begin{exercise}
+Для матрицы \(A=\begin{pmatrix} 0 & 1 & -1 \\ -1 & 0 & 1 \\ 1 & -1 & 0 \end{pmatrix}\) вычислите
+\(A^2, A^3, A^4\)
 \end{exercise}
